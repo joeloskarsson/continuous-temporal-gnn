@@ -1,0 +1,46 @@
+program: main.py
+name: traffic_test_node_bay
+method: grid
+metric:
+    name: val_rmse
+    goal: minimize
+parameters:
+    model:
+        value: "gru_node"
+    dataset:
+        values:
+            - "bay_node_0.1"
+            - "bay_node_0.25"
+            - "bay_node_0.5"
+            - "bay_node_0.75"
+            - "bay_node_1.0"
+    test:
+        value: 1
+    seed:
+        values:
+            - 913
+            - 914
+            - 915
+            - 916
+            - 917
+    decay_type:
+        values: ["none", "dynamic"]
+
+    gru_layers:
+        value: 1
+    hidden_dim:
+        value: 128
+    n_fc:
+        value: 2
+    lr:
+        value: 0.001
+    l2_reg:
+        value: 0
+
+    epochs:
+        value: 2000
+    val_interval:
+        value: 1
+    batch_size:
+        value: 16
+

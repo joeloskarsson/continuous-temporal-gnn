@@ -1,0 +1,43 @@
+program: main.py
+name: ablation_bay_gru_gnn
+method: grid
+metric:
+    name: val_rmse
+    goal: minimize
+parameters:
+    model:
+        value: "gru_graph"
+    dataset:
+        value: "bay_node_0.25"
+    test:
+        value: 1
+    seed:
+        values:
+            - 913
+            - 914
+            - 915
+            - 916
+            - 917
+    decay_type:
+        value: "dynamic"
+
+    gru_layers:
+        value: 1
+    gru_gnn:
+        value: 0
+    pred_gnn:
+        value: 1
+    hidden_dim:
+        value: 128
+    n_fc:
+        value: 2
+    lr:
+        value: 0.001
+
+    epochs:
+        value: 2000
+    val_interval:
+        value: 1
+    batch_size:
+        value: 16
+

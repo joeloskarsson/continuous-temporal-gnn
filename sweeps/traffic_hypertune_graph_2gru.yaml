@@ -1,0 +1,36 @@
+program: main.py
+name: traffic_hypertune_graph_2gru
+method: grid
+metric:
+    name: val_rmse
+    goal: minimize
+parameters:
+    model:
+        value: "gru_graph"
+    decay_type:
+        value: "dynamic"
+    dataset:
+        values:
+            - "bay_node_0.25"
+            - "la_node_0.25"
+
+    gru_layers:
+        value: 2
+    gru_gnn:
+        values: [1,2]
+    pred_gnn:
+        values: [1,2]
+    hidden_dim:
+        values: [32, 64]
+    n_fc:
+        values: [1,2]
+    lr:
+        values: [0.001, 0.0005, 0.0001]
+
+    epochs:
+        value: 1000
+    val_interval:
+        value: 1
+    batch_size:
+        value: 16
+
