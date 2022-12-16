@@ -3,7 +3,7 @@
   <img src="plotting/model_illustration.png"/>
 </p>
 
-This repository contains the code for our paper *Temporal Graph Neural Networks with Time-Continuous Latent States*, to appear at the workshop [*Continuous Time Methods for Machine Learning*](https://sites.google.com/view/continuous-time-methods-icml/home) at ICML 2022.
+This repository contains the code for our paper [*Temporal Graph Neural Networks with Time-Continuous Latent States*](https://drive.google.com/file/d/1vQW0UUXXgOExSkEUmpHSgbKQXf-66yns/view?usp=sharing), from the workshop [*Continuous Time Methods for Machine Learning*](https://sites.google.com/view/continuous-time-methods-icml/home) at ICML 2022.
 
 If you find our work useful, please cite:
 ```
