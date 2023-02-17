@@ -1,3 +1,6 @@
+# Note: Extended Research
+Our paper [Temporal Graph Neural Networks for Irregular Data](https://arxiv.org/abs/2302.08415) presents a substantial extension of the research associated with this repository. Please also take a look at the [code repository](https://github.com/joeloskarsson/tgnn4i) for that paper.   
+
 # Temporal Graph Neural Networks with Time-Continuous Latent States
 <p align="middle">
   <img src="plotting/model_illustration.png"/>
