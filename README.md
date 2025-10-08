@@ -78,5 +78,3 @@ If you are using W&B these files can be used directly to set up [sweeps](https:/
 ## Questions and contact Information
 If you have any questions about the code please open a github issue.
 
-Contact: [Joel Oskarsson](mailto:joel.oskarsson@liu.se)
-
